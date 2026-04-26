@@ -1,0 +1,3 @@
+baseURL = 'https://blog.dahlmannonline.com/'
+locale = 'de-DE'
+title = 'DahlmannOnline Blog'
