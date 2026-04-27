@@ -1,4 +1,44 @@
 baseURL = 'https://blog.dahlmannonline.com/'
-locale = 'de-DE'
+languageCode = 'de-de'
 title = 'DahlmannOnline Blog'
-theme = 'ananke'
+theme = 'PaperMod'
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = 'production'
+  title = 'DahlmannOnline Blog'
+  description = 'Gedanken, Notizen und Beiträge von Stefan Dahlmann'
+  author = 'Stefan Dahlmann'
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  ShowToc = true
+  TocOpen = false
+
+[params.homeInfoParams]
+  Title = 'Willkommen bei DahlmannOnline'
+  Content = 'Ein persönlicher Blog über Technik, Gedanken und Dinge, die mich interessieren.'
+
+[[menu.main]]
+  identifier = 'posts'
+  name = 'Beiträge'
+  url = '/posts/'
+  weight = 10
+
+[[menu.main]]
+  identifier = 'tags'
+  name = 'Tags'
+  url = '/tags/'
+  weight = 20
+
+[[menu.main]]
+  identifier = 'archives'
+  name = 'Archiv'
+  url = '/archives/'
+  weight = 30
