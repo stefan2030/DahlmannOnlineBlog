@@ -9,6 +9,13 @@
     <lastBuildDate>Tue, 28 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Arbeitsorganisation</title>
+      <link>http://localhost:1313/categories/arbeitsorganisation/</link>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/arbeitsorganisation/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>IT-Sicherheit</title>
       <link>http://localhost:1313/categories/it-sicherheit/</link>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
