@@ -1,5 +1,5 @@
 ```markdown
----
++++
 title: "Warum ein Passwortmanager wichtig ist – am Beispiel Bitwarden"
 date: 2026-04-28
 draft: false
@@ -13,7 +13,7 @@ tags:
   - Open Source
 categories:
   - IT-Sicherheit
----
++++
 
 Passwörter sind ein zentraler Bestandteil unseres digitalen Alltags. Wir brauchen sie für E-Mail-Konten, Online-Shops, Streaming-Dienste, soziale Netzwerke, Banking, Cloud-Speicher und viele weitere Dienste.
 
