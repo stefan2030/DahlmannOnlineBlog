@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>DahlmannOnline Blog</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on DahlmannOnline Blog</description>
+    <title>Bitwarden on DahlmannOnline Blog</title>
+    <link>http://localhost:1313/tags/bitwarden/</link>
+    <description>Recent content in Bitwarden on DahlmannOnline Blog</description>
     <generator>Hugo</generator>
     <language>de-de</language>
     <lastBuildDate>Tue, 28 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/bitwarden/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Warum ein Passwortmanager wichtig ist – am Beispiel Bitwarden</title>
       <link>http://localhost:1313/posts/bedeutung-von-passwortmanagern/</link>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/bedeutung-von-passwortmanagern/</guid>
       <description>Warum sichere Passwörter allein nicht ausreichen, weshalb jedes Konto ein eigenes Passwort braucht und warum Bitwarden eine gute Alternative zu Browser- und Apple-Passwortmanagern ist.</description>
-    </item>
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Sun, 26 Apr 2026 16:36:09 +0200</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;p&gt;Hello World!&lt;/p&gt;
-&lt;p&gt;Greetings&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,4 @@
-```markdown
-+++
+---
 title: "Warum ein Passwortmanager wichtig ist – am Beispiel Bitwarden"
 date: 2026-04-28
 draft: false
@@ -13,7 +12,7 @@ tags:
   - Open Source
 categories:
   - IT-Sicherheit
-+++
+---
 
 Passwörter sind ein zentraler Bestandteil unseres digitalen Alltags. Wir brauchen sie für E-Mail-Konten, Online-Shops, Streaming-Dienste, soziale Netzwerke, Banking, Cloud-Speicher und viele weitere Dienste.
 
@@ -385,4 +384,3 @@ Bitwarden ist dafür eine sehr gute Lösung. Es ist systemübergreifend, unabhä
 Im Vergleich zu integrierten Lösungen wie dem Apple-Passwortmanager bietet Bitwarden vor allem mehr Freiheit: Es funktioniert auf unterschiedlichen Betriebssystemen, mit verschiedenen Browsern und ist nicht an ein bestimmtes Ökosystem gebunden.
 
 Wer bisher noch keinen Passwortmanager nutzt, sollte damit anfangen. Es ist ein kleiner Schritt im Alltag, aber ein sehr großer Schritt für die eigene digitale Sicherheit.
-```
