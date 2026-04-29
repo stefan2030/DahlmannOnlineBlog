@@ -1,6 +1,6 @@
 ---
 title: "Korrekturhilfe für Lehrerinnen und Lehrer: Automatisiert ausgefüllter Erwartungshorizont mit Excel und Word"
-date: 2026-04-28
+date: 2026-04-29
 draft: false
 description: "Wie Lehrerinnen und Lehrer mit Excel und Word einen Erwartungshorizont als Serienbrief automatisiert ausfüllen und so Korrekturen effizienter gestalten können."
 tags:
