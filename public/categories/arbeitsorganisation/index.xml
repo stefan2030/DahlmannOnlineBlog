@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/posts/erreichbarkeit-im-beruf/</guid>
       <description>Warum ständige Erreichbarkeit im Schuldienst ein Problem ist und wie man mit klaren Bürozeiten, bewusster Kommunikation und deaktivierten Benachrichtigungen wieder mehr Ruhe und Effizienz in den Arbeitsalltag bringt.</description>
     </item>
+    <item>
+      <title>Korrekturhilfe für Lehrerinnen und Lehrer: Automatisiert ausgefüllter Erwartungshorizont mit Excel und Word</title>
+      <link>http://localhost:1313/posts/korrekturen-schneller-mit-excel/</link>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/korrekturen-schneller-mit-excel/</guid>
+      <description>Wie Lehrerinnen und Lehrer mit Excel und Word einen Erwartungshorizont als Serienbrief automatisiert ausfüllen und so Korrekturen effizienter gestalten können.</description>
+    </item>
   </channel>
 </rss>
