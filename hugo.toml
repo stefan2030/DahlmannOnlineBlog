@@ -1,5 +1,6 @@
 baseURL = 'https://blog.dahlmannonline.com/'
 languageCode = 'de-de'
+defaultContentLanguage = 'de'
 title = 'DahlmannOnline Blog'
 theme = 'PaperMod'
 
