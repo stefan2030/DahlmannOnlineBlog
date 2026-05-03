@@ -43,3 +43,9 @@ theme = 'PaperMod'
   name = 'Archiv'
   url = '/archives/'
   weight = 30
+
+[[menu.main]]
+  identifier = 'suche'
+  name = 'Suche'
+  url = '/suche/'
+  weight = 40
