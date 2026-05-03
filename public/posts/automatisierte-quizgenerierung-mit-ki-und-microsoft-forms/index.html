@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Automatisierte Quiz-Generierung mit KI und Microsoft Forms | DahlmannOnline Blog</title>
+<meta name="keywords" content="Microsoft Forms, Künstliche Intelligenz, Unterricht, Quiz, ChatGPT">
+<meta name="description" content="
+      
+    
+
+Hier geht&rsquo;s zu Teil 1 auf YouTube
+
+      
+    
+
+Hier geht&rsquo;s zu Teil 2 auf YouTube
+
+Hausaufgaben automatisiert überprüfen – mit KI und Microsoft Forms
+In diesem zweiteiligen Video-Workshop zeige ich, wie sich mithilfe von KI auf Basis eigener Unterrichtsnotizen und Screenshots ein Multiple-Choice-Quiz erstellen und direkt in Microsoft Forms importieren lässt – inklusive automatischer Korrektur, ganz ohne manuelle Nacharbeit.">
+<meta name="author" content="Stefan Dahlmann">
+<link rel="canonical" href="http://localhost:1313/posts/automatisierte-quizgenerierung-mit-ki-und-microsoft-forms/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.34d91883bcea6e759c2d3a842c5975efd544bfec7ea2927692a4497df4c731c0.css" integrity="sha256-NNkYg7zqbnWcLTqELFl179VEv&#43;x&#43;opJ2kqRJffTHMcA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/automatisierte-quizgenerierung-mit-ki-und-microsoft-forms/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="http://localhost:1313/posts/automatisierte-quizgenerierung-mit-ki-und-microsoft-forms/">
+  <meta property="og:site_name" content="DahlmannOnline Blog">
+  <meta property="og:title" content="Automatisierte Quiz-Generierung mit KI und Microsoft Forms">
+  <meta property="og:description" content="Hier geht’s zu Teil 1 auf YouTube
+Hier geht’s zu Teil 2 auf YouTube
+Hausaufgaben automatisiert überprüfen – mit KI und Microsoft Forms In diesem zweiteiligen Video-Workshop zeige ich, wie sich mithilfe von KI auf Basis eigener Unterrichtsnotizen und Screenshots ein Multiple-Choice-Quiz erstellen und direkt in Microsoft Forms importieren lässt – inklusive automatischer Korrektur, ganz ohne manuelle Nacharbeit.">
+  <meta property="og:locale" content="de_de">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-01-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-30T00:00:00+00:00">
+    <meta property="article:tag" content="Microsoft Forms">
+    <meta property="article:tag" content="Künstliche Intelligenz">
+    <meta property="article:tag" content="Unterricht">
+    <meta property="article:tag" content="Quiz">
+    <meta property="article:tag" content="ChatGPT">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Automatisierte Quiz-Generierung mit KI und Microsoft Forms">
+  <meta name="twitter:description" content="Hier geht’s zu Teil 1 auf YouTube
+Hier geht’s zu Teil 2 auf YouTube
+Hausaufgaben automatisiert überprüfen – mit KI und Microsoft Forms In diesem zweiteiligen Video-Workshop zeige ich, wie sich mithilfe von KI auf Basis eigener Unterrichtsnotizen und Screenshots ein Multiple-Choice-Quiz erstellen und direkt in Microsoft Forms importieren lässt – inklusive automatischer Korrektur, ganz ohne manuelle Nacharbeit.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Automatisierte Quiz-Generierung mit KI und Microsoft Forms",
+      "item": "http://localhost:1313/posts/automatisierte-quizgenerierung-mit-ki-und-microsoft-forms/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Automatisierte Quiz-Generierung mit KI und Microsoft Forms",
+  "name": "Automatisierte Quiz-Generierung mit KI und Microsoft Forms",
+  "description": " Hier geht\u0026rsquo;s zu Teil 1 auf YouTube\nHier geht\u0026rsquo;s zu Teil 2 auf YouTube\nHausaufgaben automatisiert überprüfen – mit KI und Microsoft Forms In diesem zweiteiligen Video-Workshop zeige ich, wie sich mithilfe von KI auf Basis eigener Unterrichtsnotizen und Screenshots ein Multiple-Choice-Quiz erstellen und direkt in Microsoft Forms importieren lässt – inklusive automatischer Korrektur, ganz ohne manuelle Nacharbeit.\n",
+  "keywords": [
+    "Microsoft Forms", "Künstliche Intelligenz", "Unterricht", "Quiz", "ChatGPT"
+  ],
+  "articleBody": " Hier geht’s zu Teil 1 auf YouTube\nHier geht’s zu Teil 2 auf YouTube\nHausaufgaben automatisiert überprüfen – mit KI und Microsoft Forms In diesem zweiteiligen Video-Workshop zeige ich, wie sich mithilfe von KI auf Basis eigener Unterrichtsnotizen und Screenshots ein Multiple-Choice-Quiz erstellen und direkt in Microsoft Forms importieren lässt – inklusive automatischer Korrektur, ganz ohne manuelle Nacharbeit.\nTeil 1: Quiz-Fragen mit KI generieren Das Ziel Das Ziel ist eine automatisch korrigierte Hausaufgaben-Überprüfung. Der Workflow sieht so aus:\nUnterrichtsnotizen und Screenshots als Grundlage aufbereiten Einen detaillierten Prompt an eine KI schicken Aus dem KI-Output ein Word-Dokument erstellen Dieses Dokument in Microsoft Forms als Quiz importieren Die KI-Wahl In diesem Beispiel nutze ich ChatGPT 4o (das Plus-Modell), da es deutlich leistungsfähiger ist als die kostenlose Variante – vor allem beim Verarbeiten von Screenshots. Grundsätzlich funktioniert der Ansatz aber auch mit anderen Modellen wie DeepSeek, Claude oder Gemini.\nDen Prompt aufbauen Ein guter Prompt ist entscheidend. Ich gebe der KI folgende Informationen mit:\nKontext: Wer bin ich, an welcher Schule unterrichte ich, was ist das Ziel? Unterrichtsthema: In diesem Fall „Endogene Kräfte\" (Geographie, Klasse 7/8) Unterrichtsinhalte: Meine eigenen Notizen zu den behandelten Themen: Schild- und Schichtvulkane Plattentektonik und Plattengrenzen Erdbeben und Seebeben Hotspots (Beispiel Island) Gefahren und Schutzmaßnahmen Screenshots: Fotos aus dem Unterrichtsmaterial direkt in den Chat einfügen (bei der kostenpflichtigen Variante problemlos möglich) Tipp: In ChatGPT einfach mit Shift + Enter Zeilenumbrüche innerhalb des Prompts machen, um den Text übersichtlich zu strukturieren, ohne ihn versehentlich abzuschicken.\nErgebnis prüfen und anpassen Die KI generiert zunächst einige Fragen. Diese lassen sich direkt im Chat weiter verfeinern:\nFragen ergänzen: „Erstelle insgesamt 20 Fragen.\" Einzelne Fragen überarbeiten: „Frage 15 gefällt mir nicht, bitte umformulieren.\" Fragen ersetzen: „Tausche Frage 15 gegen eine neue aus.\" Einige Antwortmöglichkeiten mögen auf den ersten Blick offensichtlich falsch klingen – das ist aber durchaus gewollt, um auch Schülerinnen und Schüler zu entlarven, die den Stoff nicht gelernt haben.\nExport als Word-Dokument Sobald die 20 Fragen final sind, kopiere ich alles in ein Word-Dokument und speichere es lokal ab (z. B. als endogene-kraefte-quiz.docx).\nTeil 2: Import in Microsoft Forms und Feinschliff Import über Microsoft Forms forms.microsoft.com öffnen Oben auf „Schnellimport\" klicken Das Word-Dokument hochladen und als Quiz importieren Microsoft Forms erkennt dabei automatisch Titel, Fragen und Antwortmöglichkeiten. Nach einem kurzen Ladevorgang (bei Serverproblemen hilft ein einfaches Neuladen der Seite) erscheint das Quiz zur Bearbeitung.\nRichtige Antworten markieren Nach dem Import sind die richtigen Antworten noch nicht hinterlegt – das ist der einzige manuelle Schritt. Für jede Frage:\nIn die Frage klicken Die korrekte Antwort als „Richtige Antwort\" markieren Punktzahl vergeben (hier: 1 Punkt pro Frage, also 20 Punkte gesamt) Achtung: Nicht vergessen, jede Frage durchzugehen – eine übersehene Frage bedeutet hinterher doppelte Arbeit.\nSinnvolle Einstellungen Unter den Einstellungen des Quiz lassen sich hilfreiche Optionen aktivieren:\nEinstellung Empfehlung Übungsmodus Deaktivieren Ergebnisse automatisch anzeigen Deaktivieren (manuell nachher freigeben) Fragen in zufälliger Reihenfolge Aktivieren (verhindert Abschreiben) Fragenummer für Befragte deaktivieren Aktivieren (erschwert Abgucken beim Nachbarn) Antworten sperren/Name oben fixieren Optional Start- und Enddatum Optional, wenn nicht über Teams verteilt Namen der Schülerinnen und Schüler erfassen Wenn das Quiz über Microsoft Teams ausgeteilt wird, sind die Antworten den Schülerinnen und Schülern automatisch zugeordnet. Wird der Link frei verschickt, empfiehlt sich eine zusätzliche Textfrage am Ende:\n„Wie lautet dein Name? Bitte zuerst Vorname, dann Nachname.\"\nDiese Frage bekommt keine Punkte, wird aber als Pflichtfeld markiert.\nAuswertung und Notenverwaltung Nach der Durchführung stehen alle Ergebnisse direkt in Microsoft Forms zur Verfügung. Die Prozentwerte lassen sich unkompliziert in gängige Notenverwaltungsprogramme (z. B. Dino oder andere Schulverwaltungslösungen) als 0–100-Punkte-Skala übertragen. Die Ergebnisse können außerdem als Grundlage für die anschließende Klassenbesprechung genutzt werden.\nFazit Der gesamte Workflow von den Unterrichtsnotizen bis zum fertigen, automatisch korrigierten Online-Quiz lässt sich in wenigen Minuten umsetzen:\n✅ Kein manuelles Erstellen von Fragen ✅ Automatische Korrektur durch Microsoft Forms ✅ Zufällige Fragenreihenfolge gegen Abschreiben ✅ Ergebnisse direkt auswertbar Viel Erfolg beim Nachbauen!\n",
+  "wordCount" : "646",
+  "inLanguage": "en",
+  "datePublished": "2025-01-30T00:00:00Z",
+  "dateModified": "2025-01-30T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Stefan Dahlmann"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/automatisierte-quizgenerierung-mit-ki-und-microsoft-forms/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DahlmannOnline Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="DahlmannOnline Blog (Alt + H)">DahlmannOnline Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="Beiträge">
+                    <span>Beiträge</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archiv">
+                    <span>Archiv</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    <a href='http://localhost:1313/'>Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="http://localhost:1313/posts/">Posts</a></nav>
+    <h1 class="post-title entry-hint-parent">
+      Automatisierte Quiz-Generierung mit KI und Microsoft Forms
+    </h1>
+    <div class="post-meta"><span title='2025-01-30 00:00:00 +0000 UTC'>January 30, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Stefan Dahlmann</span>
+
+</div>
+  </header> <details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Table of Contents</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#hausaufgaben-automatisiert-%c3%bcberpr%c3%bcfen--mit-ki-und-microsoft-forms" aria-label="Hausaufgaben automatisiert überprüfen – mit KI und Microsoft Forms">Hausaufgaben automatisiert überprüfen – mit KI und Microsoft Forms</a></li>
+            <li>
+                <a href="#teil-1-quiz-fragen-mit-ki-generieren" aria-label="Teil 1: Quiz-Fragen mit KI generieren">Teil 1: Quiz-Fragen mit KI generieren</a><ul>
+                    
+            <li>
+                <a href="#das-ziel" aria-label="Das Ziel">Das Ziel</a></li>
+            <li>
+                <a href="#die-ki-wahl" aria-label="Die KI-Wahl">Die KI-Wahl</a></li>
+            <li>
+                <a href="#den-prompt-aufbauen" aria-label="Den Prompt aufbauen">Den Prompt aufbauen</a></li>
+            <li>
+                <a href="#ergebnis-pr%c3%bcfen-und-anpassen" aria-label="Ergebnis prüfen und anpassen">Ergebnis prüfen und anpassen</a></li>
+            <li>
+                <a href="#export-als-word-dokument" aria-label="Export als Word-Dokument">Export als Word-Dokument</a></li></ul>
+            </li>
+            <li>
+                <a href="#teil-2-import-in-microsoft-forms-und-feinschliff" aria-label="Teil 2: Import in Microsoft Forms und Feinschliff">Teil 2: Import in Microsoft Forms und Feinschliff</a><ul>
+                    
+            <li>
+                <a href="#import-%c3%bcber-microsoft-forms" aria-label="Import über Microsoft Forms">Import über Microsoft Forms</a></li>
+            <li>
+                <a href="#richtige-antworten-markieren" aria-label="Richtige Antworten markieren">Richtige Antworten markieren</a></li>
+            <li>
+                <a href="#sinnvolle-einstellungen" aria-label="Sinnvolle Einstellungen">Sinnvolle Einstellungen</a></li>
+            <li>
+                <a href="#namen-der-sch%c3%bclerinnen-und-sch%c3%bcler-erfassen" aria-label="Namen der Schülerinnen und Schüler erfassen">Namen der Schülerinnen und Schüler erfassen</a></li>
+            <li>
+                <a href="#auswertung-und-notenverwaltung" aria-label="Auswertung und Notenverwaltung">Auswertung und Notenverwaltung</a></li></ul>
+            </li>
+            <li>
+                <a href="#fazit" aria-label="Fazit">Fazit</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/qbzK9sLekJ4?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<p><a href="https://youtu.be/qbzK9sLekJ4">Hier geht&rsquo;s zu Teil 1 auf YouTube</a></p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/b4VGXZfHs-M?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<p><a href="https://youtu.be/b4VGXZfHs-M">Hier geht&rsquo;s zu Teil 2 auf YouTube</a></p>
+<hr>
+<h2 id="hausaufgaben-automatisiert-überprüfen--mit-ki-und-microsoft-forms">Hausaufgaben automatisiert überprüfen – mit KI und Microsoft Forms<a hidden class="anchor" aria-hidden="true" href="#hausaufgaben-automatisiert-überprüfen--mit-ki-und-microsoft-forms">#</a></h2>
+<p>In diesem zweiteiligen Video-Workshop zeige ich, wie sich mithilfe von KI auf Basis eigener Unterrichtsnotizen und Screenshots ein Multiple-Choice-Quiz erstellen und direkt in Microsoft Forms importieren lässt – inklusive automatischer Korrektur, ganz ohne manuelle Nacharbeit.</p>
+<hr>
+<h2 id="teil-1-quiz-fragen-mit-ki-generieren">Teil 1: Quiz-Fragen mit KI generieren<a hidden class="anchor" aria-hidden="true" href="#teil-1-quiz-fragen-mit-ki-generieren">#</a></h2>
+<h3 id="das-ziel">Das Ziel<a hidden class="anchor" aria-hidden="true" href="#das-ziel">#</a></h3>
+<p>Das Ziel ist eine automatisch korrigierte Hausaufgaben-Überprüfung. Der Workflow sieht so aus:</p>
+<ol>
+<li>Unterrichtsnotizen und Screenshots als Grundlage aufbereiten</li>
+<li>Einen detaillierten Prompt an eine KI schicken</li>
+<li>Aus dem KI-Output ein Word-Dokument erstellen</li>
+<li>Dieses Dokument in Microsoft Forms als Quiz importieren</li>
+</ol>
+<h3 id="die-ki-wahl">Die KI-Wahl<a hidden class="anchor" aria-hidden="true" href="#die-ki-wahl">#</a></h3>
+<p>In diesem Beispiel nutze ich <strong>ChatGPT 4o</strong> (das Plus-Modell), da es deutlich leistungsfähiger ist als die kostenlose Variante – vor allem beim Verarbeiten von Screenshots. Grundsätzlich funktioniert der Ansatz aber auch mit anderen Modellen wie <strong>DeepSeek</strong>, <strong>Claude</strong> oder <strong>Gemini</strong>.</p>
+<h3 id="den-prompt-aufbauen">Den Prompt aufbauen<a hidden class="anchor" aria-hidden="true" href="#den-prompt-aufbauen">#</a></h3>
+<p>Ein guter Prompt ist entscheidend. Ich gebe der KI folgende Informationen mit:</p>
+<ul>
+<li><strong>Kontext:</strong> Wer bin ich, an welcher Schule unterrichte ich, was ist das Ziel?</li>
+<li><strong>Unterrichtsthema:</strong> In diesem Fall „Endogene Kräfte&quot; (Geographie, Klasse 7/8)</li>
+<li><strong>Unterrichtsinhalte:</strong> Meine eigenen Notizen zu den behandelten Themen:
+<ul>
+<li>Schild- und Schichtvulkane</li>
+<li>Plattentektonik und Plattengrenzen</li>
+<li>Erdbeben und Seebeben</li>
+<li>Hotspots (Beispiel Island)</li>
+<li>Gefahren und Schutzmaßnahmen</li>
+</ul>
+</li>
+<li><strong>Screenshots:</strong> Fotos aus dem Unterrichtsmaterial direkt in den Chat einfügen (bei der kostenpflichtigen Variante problemlos möglich)</li>
+</ul>
+<blockquote>
+<p><strong>Tipp:</strong> In ChatGPT einfach mit <strong>Shift + Enter</strong> Zeilenumbrüche innerhalb des Prompts machen, um den Text übersichtlich zu strukturieren, ohne ihn versehentlich abzuschicken.</p>
+</blockquote>
+<h3 id="ergebnis-prüfen-und-anpassen">Ergebnis prüfen und anpassen<a hidden class="anchor" aria-hidden="true" href="#ergebnis-prüfen-und-anpassen">#</a></h3>
+<p>Die KI generiert zunächst einige Fragen. Diese lassen sich direkt im Chat weiter verfeinern:</p>
+<ul>
+<li><strong>Fragen ergänzen:</strong> „Erstelle insgesamt 20 Fragen.&quot;</li>
+<li><strong>Einzelne Fragen überarbeiten:</strong> „Frage 15 gefällt mir nicht, bitte umformulieren.&quot;</li>
+<li><strong>Fragen ersetzen:</strong> „Tausche Frage 15 gegen eine neue aus.&quot;</li>
+</ul>
+<p>Einige Antwortmöglichkeiten mögen auf den ersten Blick offensichtlich falsch klingen – das ist aber durchaus gewollt, um auch Schülerinnen und Schüler zu entlarven, die den Stoff nicht gelernt haben.</p>
+<h3 id="export-als-word-dokument">Export als Word-Dokument<a hidden class="anchor" aria-hidden="true" href="#export-als-word-dokument">#</a></h3>
+<p>Sobald die 20 Fragen final sind, kopiere ich alles in ein <strong>Word-Dokument</strong> und speichere es lokal ab (z. B. als <code>endogene-kraefte-quiz.docx</code>).</p>
+<hr>
+<h2 id="teil-2-import-in-microsoft-forms-und-feinschliff">Teil 2: Import in Microsoft Forms und Feinschliff<a hidden class="anchor" aria-hidden="true" href="#teil-2-import-in-microsoft-forms-und-feinschliff">#</a></h2>
+<h3 id="import-über-microsoft-forms">Import über Microsoft Forms<a hidden class="anchor" aria-hidden="true" href="#import-über-microsoft-forms">#</a></h3>
+<ol>
+<li><a href="https://forms.microsoft.com">forms.microsoft.com</a> öffnen</li>
+<li>Oben auf <strong>„Schnellimport&quot;</strong> klicken</li>
+<li>Das Word-Dokument hochladen und als <strong>Quiz</strong> importieren</li>
+</ol>
+<p>Microsoft Forms erkennt dabei automatisch Titel, Fragen und Antwortmöglichkeiten. Nach einem kurzen Ladevorgang (bei Serverproblemen hilft ein einfaches Neuladen der Seite) erscheint das Quiz zur Bearbeitung.</p>
+<h3 id="richtige-antworten-markieren">Richtige Antworten markieren<a hidden class="anchor" aria-hidden="true" href="#richtige-antworten-markieren">#</a></h3>
+<p>Nach dem Import sind die richtigen Antworten noch nicht hinterlegt – das ist der einzige manuelle Schritt. Für jede Frage:</p>
+<ol>
+<li>In die Frage klicken</li>
+<li>Die korrekte Antwort als <strong>„Richtige Antwort&quot;</strong> markieren</li>
+<li>Punktzahl vergeben (hier: 1 Punkt pro Frage, also 20 Punkte gesamt)</li>
+</ol>
+<blockquote>
+<p><strong>Achtung:</strong> Nicht vergessen, jede Frage durchzugehen – eine übersehene Frage bedeutet hinterher doppelte Arbeit.</p>
+</blockquote>
+<h3 id="sinnvolle-einstellungen">Sinnvolle Einstellungen<a hidden class="anchor" aria-hidden="true" href="#sinnvolle-einstellungen">#</a></h3>
+<p>Unter den <strong>Einstellungen</strong> des Quiz lassen sich hilfreiche Optionen aktivieren:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Einstellung</th>
+          <th>Empfehlung</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Übungsmodus</td>
+          <td>Deaktivieren</td>
+      </tr>
+      <tr>
+          <td>Ergebnisse automatisch anzeigen</td>
+          <td>Deaktivieren (manuell nachher freigeben)</td>
+      </tr>
+      <tr>
+          <td>Fragen in zufälliger Reihenfolge</td>
+          <td><strong>Aktivieren</strong> (verhindert Abschreiben)</td>
+      </tr>
+      <tr>
+          <td>Fragenummer für Befragte deaktivieren</td>
+          <td><strong>Aktivieren</strong> (erschwert Abgucken beim Nachbarn)</td>
+      </tr>
+      <tr>
+          <td>Antworten sperren/Name oben fixieren</td>
+          <td>Optional</td>
+      </tr>
+      <tr>
+          <td>Start- und Enddatum</td>
+          <td>Optional, wenn nicht über Teams verteilt</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="namen-der-schülerinnen-und-schüler-erfassen">Namen der Schülerinnen und Schüler erfassen<a hidden class="anchor" aria-hidden="true" href="#namen-der-schülerinnen-und-schüler-erfassen">#</a></h3>
+<p>Wenn das Quiz über <strong>Microsoft Teams</strong> ausgeteilt wird, sind die Antworten den Schülerinnen und Schülern automatisch zugeordnet. Wird der Link frei verschickt, empfiehlt sich eine zusätzliche Textfrage am Ende:</p>
+<blockquote>
+<p>„Wie lautet dein Name? Bitte zuerst Vorname, dann Nachname.&quot;</p>
+</blockquote>
+<p>Diese Frage bekommt keine Punkte, wird aber als <strong>Pflichtfeld</strong> markiert.</p>
+<h3 id="auswertung-und-notenverwaltung">Auswertung und Notenverwaltung<a hidden class="anchor" aria-hidden="true" href="#auswertung-und-notenverwaltung">#</a></h3>
+<p>Nach der Durchführung stehen alle Ergebnisse direkt in Microsoft Forms zur Verfügung. Die Prozentwerte lassen sich unkompliziert in gängige Notenverwaltungsprogramme (z. B. <strong>Dino</strong> oder andere Schulverwaltungslösungen) als 0–100-Punkte-Skala übertragen. Die Ergebnisse können außerdem als Grundlage für die anschließende <strong>Klassenbesprechung</strong> genutzt werden.</p>
+<hr>
+<h2 id="fazit">Fazit<a hidden class="anchor" aria-hidden="true" href="#fazit">#</a></h2>
+<p>Der gesamte Workflow von den Unterrichtsnotizen bis zum fertigen, automatisch korrigierten Online-Quiz lässt sich in wenigen Minuten umsetzen:</p>
+<ul>
+<li>✅ Kein manuelles Erstellen von Fragen</li>
+<li>✅ Automatische Korrektur durch Microsoft Forms</li>
+<li>✅ Zufällige Fragenreihenfolge gegen Abschreiben</li>
+<li>✅ Ergebnisse direkt auswertbar</li>
+</ul>
+<p>Viel Erfolg beim Nachbauen!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/microsoft-forms/">Microsoft Forms</a></li>
+      <li><a href="http://localhost:1313/tags/k%C3%BCnstliche-intelligenz/">Künstliche Intelligenz</a></li>
+      <li><a href="http://localhost:1313/tags/unterricht/">Unterricht</a></li>
+      <li><a href="http://localhost:1313/tags/quiz/">Quiz</a></li>
+      <li><a href="http://localhost:1313/tags/chatgpt/">ChatGPT</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/my-first-post/">
+    <span class="title">« Prev</span>
+    <span>My First Post</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">DahlmannOnline Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

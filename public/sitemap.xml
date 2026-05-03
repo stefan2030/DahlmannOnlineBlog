@@ -2,19 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/categories/arbeitsorganisation/</loc>
+    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/excel/</loc>
+    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/korrektur/</loc>
+    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/korrekturen-schneller-mit-excel/</loc>
+    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/schule/</loc>
+    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/serienbrief/</loc>
+    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/word/</loc>
+    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/arbeit/</loc>
     <lastmod>2026-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/arbeitsorganisation/</loc>
-    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/bitwarden/</loc>
-    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-04-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/datenschutz/</loc>
@@ -26,9 +50,6 @@
     <loc>http://localhost:1313/posts/erreichbarkeit-im-beruf/</loc>
     <lastmod>2026-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/excel/</loc>
-    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/it-sicherheit/</loc>
     <lastmod>2026-04-28T00:00:00+00:00</lastmod>
   </url><url>
@@ -36,12 +57,6 @@
     <lastmod>2026-04-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/kommunikation/</loc>
-    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/korrektur/</loc>
-    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/korrekturen-schneller-mit-excel/</loc>
     <lastmod>2026-04-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/open-source/</loc>
@@ -53,22 +68,7 @@
     <loc>http://localhost:1313/tags/passwortmanager/</loc>
     <lastmod>2026-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/schule/</loc>
-    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/serienbrief/</loc>
-    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/bedeutung-von-passwortmanagern/</loc>
-    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/word/</loc>
     <lastmod>2026-04-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/work-life-balance/</loc>
@@ -76,6 +76,24 @@
   </url><url>
     <loc>http://localhost:1313/posts/my-first-post/</loc>
     <lastmod>2026-04-26T16:36:09+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/automatisierte-quizgenerierung-mit-ki-und-microsoft-forms/</loc>
+    <lastmod>2025-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/chatgpt/</loc>
+    <lastmod>2025-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/k%C3%BCnstliche-intelligenz/</loc>
+    <lastmod>2025-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/microsoft-forms/</loc>
+    <lastmod>2025-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/quiz/</loc>
+    <lastmod>2025-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/unterricht/</loc>
+    <lastmod>2025-01-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archives/</loc>
   </url>

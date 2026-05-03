@@ -6,8 +6,43 @@
     <description>Recent content in Tags on DahlmannOnline Blog</description>
     <generator>Hugo</generator>
     <language>de-de</language>
-    <lastBuildDate>Tue, 28 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Excel</title>
+      <link>http://localhost:1313/tags/excel/</link>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/excel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Korrektur</title>
+      <link>http://localhost:1313/tags/korrektur/</link>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/korrektur/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Schule</title>
+      <link>http://localhost:1313/tags/schule/</link>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/schule/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Serienbrief</title>
+      <link>http://localhost:1313/tags/serienbrief/</link>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/serienbrief/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Word</title>
+      <link>http://localhost:1313/tags/word/</link>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/word/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Arbeit</title>
       <link>http://localhost:1313/tags/arbeit/</link>
@@ -37,13 +72,6 @@
       <description></description>
     </item>
     <item>
-      <title>Excel</title>
-      <link>http://localhost:1313/tags/excel/</link>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/excel/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>IT-Sicherheit</title>
       <link>http://localhost:1313/tags/it-sicherheit/</link>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
@@ -55,13 +83,6 @@
       <link>http://localhost:1313/tags/kommunikation/</link>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/kommunikation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Korrektur</title>
-      <link>http://localhost:1313/tags/korrektur/</link>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/korrektur/</guid>
       <description></description>
     </item>
     <item>
@@ -86,31 +107,45 @@
       <description></description>
     </item>
     <item>
-      <title>Schule</title>
-      <link>http://localhost:1313/tags/schule/</link>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/schule/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Serienbrief</title>
-      <link>http://localhost:1313/tags/serienbrief/</link>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/serienbrief/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Word</title>
-      <link>http://localhost:1313/tags/word/</link>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/word/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Work-Life-Balance</title>
       <link>http://localhost:1313/tags/work-life-balance/</link>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/work-life-balance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ChatGPT</title>
+      <link>http://localhost:1313/tags/chatgpt/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/chatgpt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Künstliche Intelligenz</title>
+      <link>http://localhost:1313/tags/k%C3%BCnstliche-intelligenz/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/k%C3%BCnstliche-intelligenz/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microsoft Forms</title>
+      <link>http://localhost:1313/tags/microsoft-forms/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/microsoft-forms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quiz</title>
+      <link>http://localhost:1313/tags/quiz/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/quiz/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unterricht</title>
+      <link>http://localhost:1313/tags/unterricht/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/unterricht/</guid>
       <description></description>
     </item>
   </channel>

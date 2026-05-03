@@ -6,21 +6,21 @@
     <description>Recent content in Posts on DahlmannOnline Blog</description>
     <generator>Hugo</generator>
     <language>de-de</language>
-    <lastBuildDate>Tue, 28 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Korrekturhilfe für Lehrerinnen und Lehrer: Automatisiert ausgefüllter Erwartungshorizont mit Excel und Word</title>
+      <link>http://localhost:1313/posts/korrekturen-schneller-mit-excel/</link>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/korrekturen-schneller-mit-excel/</guid>
+      <description>Wie Lehrerinnen und Lehrer mit Excel und Word einen Erwartungshorizont als Serienbrief automatisiert ausfüllen und so Korrekturen effizienter gestalten können.</description>
+    </item>
     <item>
       <title>Erreichbarkeit im Schuldienst – Meine Philosophie zum digitalen Feierabend</title>
       <link>http://localhost:1313/posts/erreichbarkeit-im-beruf/</link>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/erreichbarkeit-im-beruf/</guid>
       <description>Warum ständige Erreichbarkeit im Schuldienst ein Problem ist und wie man mit klaren Bürozeiten, bewusster Kommunikation und deaktivierten Benachrichtigungen wieder mehr Ruhe und Effizienz in den Arbeitsalltag bringt.</description>
-    </item>
-    <item>
-      <title>Korrekturhilfe für Lehrerinnen und Lehrer: Automatisiert ausgefüllter Erwartungshorizont mit Excel und Word</title>
-      <link>http://localhost:1313/posts/korrekturen-schneller-mit-excel/</link>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/korrekturen-schneller-mit-excel/</guid>
-      <description>Wie Lehrerinnen und Lehrer mit Excel und Word einen Erwartungshorizont als Serienbrief automatisiert ausfüllen und so Korrekturen effizienter gestalten können.</description>
     </item>
     <item>
       <title>Warum ein Passwortmanager wichtig ist – am Beispiel Bitwarden</title>
@@ -36,6 +36,25 @@
       <guid>http://localhost:1313/posts/my-first-post/</guid>
       <description>&lt;p&gt;Hello World!&lt;/p&gt;
 &lt;p&gt;Greetings&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automatisierte Quiz-Generierung mit KI und Microsoft Forms</title>
+      <link>http://localhost:1313/posts/automatisierte-quizgenerierung-mit-ki-und-microsoft-forms/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/automatisierte-quizgenerierung-mit-ki-und-microsoft-forms/</guid>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/qbzK9sLekJ4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://youtu.be/qbzK9sLekJ4&#34;&gt;Hier geht&amp;rsquo;s zu Teil 1 auf YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/b4VGXZfHs-M?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://youtu.be/b4VGXZfHs-M&#34;&gt;Hier geht&amp;rsquo;s zu Teil 2 auf YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;hausaufgaben-automatisiert-überprüfen--mit-ki-und-microsoft-forms&#34;&gt;Hausaufgaben automatisiert überprüfen – mit KI und Microsoft Forms&lt;/h2&gt;
+&lt;p&gt;In diesem zweiteiligen Video-Workshop zeige ich, wie sich mithilfe von KI auf Basis eigener Unterrichtsnotizen und Screenshots ein Multiple-Choice-Quiz erstellen und direkt in Microsoft Forms importieren lässt – inklusive automatischer Korrektur, ganz ohne manuelle Nacharbeit.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
