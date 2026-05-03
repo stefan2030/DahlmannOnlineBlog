@@ -20,6 +20,7 @@ theme = 'PaperMod'
   ShowRssButtonInSectionTermList = true
   ShowToc = true
   TocOpen = false
+  comments = true
 
 [params.homeInfoParams]
   Title = 'Willkommen bei DahlmannOnline'
