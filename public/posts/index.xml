@@ -6,8 +6,23 @@
     <description>Recent content in Posts on DahlmannOnline Blog</description>
     <generator>Hugo</generator>
     <language>de-de</language>
-    <lastBuildDate>Wed, 29 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Schule digital unabhängig: Warum wir Google und Microsoft den Rücken kehren sollten</title>
+      <link>http://localhost:1313/posts/schule-digital-unabhaengig-serie/</link>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/schule-digital-unabhaengig-serie/</guid>
+      <description>&lt;h2 id=&#34;die-idee-hinter-schule-digital-unabhängig&#34;&gt;Die Idee hinter „Schule digital unabhängig&amp;quot;&lt;/h2&gt;
+&lt;p&gt;Ich starte eine neue Blog- und Videoreihe, die mir schon lange am Herzen liegt: &lt;strong&gt;„Schule digital unabhängig&amp;quot;&lt;/strong&gt;. In dieser Reihe möchte ich zeigen, wie Schulen – aber auch andere Bildungseinrichtungen – ihre digitale Infrastruktur so aufbauen können, dass sie nicht länger von großen amerikanischen Tech-Konzernen abhängig sind. Der Fokus liegt dabei auf zwei zentralen Themenbereichen:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;E-Mail&lt;/strong&gt; – die digitale Kommunikationsgrundlage jeder Institution&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Kollaboration&lt;/strong&gt; – gemeinsames Arbeiten mit Tools wie Nextcloud&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;motivation-warum-überhaupt-unabhängig-werden&#34;&gt;Motivation: Warum überhaupt unabhängig werden?&lt;/h2&gt;
+&lt;p&gt;Die meisten Schulen greifen heute auf eine von zwei Lösungen zurück: &lt;strong&gt;Google Workspace for Education&lt;/strong&gt; oder &lt;strong&gt;Microsoft 365&lt;/strong&gt;. Beide Plattformen sind ausgereifte Produkte, keine Frage – aber sie kommen mit einem erheblichen Haken.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Korrekturhilfe für Lehrerinnen und Lehrer: Automatisiert ausgefüllter Erwartungshorizont mit Excel und Word</title>
       <link>http://localhost:1313/posts/korrekturen-schneller-mit-excel/</link>
@@ -28,14 +43,6 @@
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/bedeutung-von-passwortmanagern/</guid>
       <description>Warum sichere Passwörter allein nicht ausreichen, weshalb jedes Konto ein eigenes Passwort braucht und warum Bitwarden eine gute Alternative zu Browser- und Apple-Passwortmanagern ist.</description>
-    </item>
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Sun, 26 Apr 2026 16:36:09 +0200</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;p&gt;Hello World!&lt;/p&gt;
-&lt;p&gt;Greetings&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automatisierte Quiz-Generierung mit KI und Microsoft Forms</title>

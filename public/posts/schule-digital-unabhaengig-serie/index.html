@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="de" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Schule digital unabhängig: Warum wir Google und Microsoft den Rücken kehren sollten | DahlmannOnline Blog</title>
+<meta name="keywords" content="Open Source, Schule, Datenschutz, Nextcloud, Mailcow">
+<meta name="description" content="Die Idee hinter „Schule digital unabhängig&quot;
+Ich starte eine neue Blog- und Videoreihe, die mir schon lange am Herzen liegt: „Schule digital unabhängig&quot;. In dieser Reihe möchte ich zeigen, wie Schulen – aber auch andere Bildungseinrichtungen – ihre digitale Infrastruktur so aufbauen können, dass sie nicht länger von großen amerikanischen Tech-Konzernen abhängig sind. Der Fokus liegt dabei auf zwei zentralen Themenbereichen:
+
+E-Mail – die digitale Kommunikationsgrundlage jeder Institution
+Kollaboration – gemeinsames Arbeiten mit Tools wie Nextcloud
+
+
+Motivation: Warum überhaupt unabhängig werden?
+Die meisten Schulen greifen heute auf eine von zwei Lösungen zurück: Google Workspace for Education oder Microsoft 365. Beide Plattformen sind ausgereifte Produkte, keine Frage – aber sie kommen mit einem erheblichen Haken.">
+<meta name="author" content="Stefan Dahlmann">
+<link rel="canonical" href="http://localhost:1313/posts/schule-digital-unabhaengig-serie/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.34d91883bcea6e759c2d3a842c5975efd544bfec7ea2927692a4497df4c731c0.css" integrity="sha256-NNkYg7zqbnWcLTqELFl179VEv&#43;x&#43;opJ2kqRJffTHMcA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="de" href="http://localhost:1313/posts/schule-digital-unabhaengig-serie/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="http://localhost:1313/posts/schule-digital-unabhaengig-serie/">
+  <meta property="og:site_name" content="DahlmannOnline Blog">
+  <meta property="og:title" content="Schule digital unabhängig: Warum wir Google und Microsoft den Rücken kehren sollten">
+  <meta property="og:description" content="Die Idee hinter „Schule digital unabhängig&#34; Ich starte eine neue Blog- und Videoreihe, die mir schon lange am Herzen liegt: „Schule digital unabhängig&#34;. In dieser Reihe möchte ich zeigen, wie Schulen – aber auch andere Bildungseinrichtungen – ihre digitale Infrastruktur so aufbauen können, dass sie nicht länger von großen amerikanischen Tech-Konzernen abhängig sind. Der Fokus liegt dabei auf zwei zentralen Themenbereichen:
+E-Mail – die digitale Kommunikationsgrundlage jeder Institution Kollaboration – gemeinsames Arbeiten mit Tools wie Nextcloud Motivation: Warum überhaupt unabhängig werden? Die meisten Schulen greifen heute auf eine von zwei Lösungen zurück: Google Workspace for Education oder Microsoft 365. Beide Plattformen sind ausgereifte Produkte, keine Frage – aber sie kommen mit einem erheblichen Haken.">
+  <meta property="og:locale" content="de_de">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-05-05T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-05T00:00:00+00:00">
+    <meta property="article:tag" content="Open Source">
+    <meta property="article:tag" content="Schule">
+    <meta property="article:tag" content="Datenschutz">
+    <meta property="article:tag" content="Nextcloud">
+    <meta property="article:tag" content="Mailcow">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Schule digital unabhängig: Warum wir Google und Microsoft den Rücken kehren sollten">
+  <meta name="twitter:description" content="Die Idee hinter „Schule digital unabhängig&#34; Ich starte eine neue Blog- und Videoreihe, die mir schon lange am Herzen liegt: „Schule digital unabhängig&#34;. In dieser Reihe möchte ich zeigen, wie Schulen – aber auch andere Bildungseinrichtungen – ihre digitale Infrastruktur so aufbauen können, dass sie nicht länger von großen amerikanischen Tech-Konzernen abhängig sind. Der Fokus liegt dabei auf zwei zentralen Themenbereichen:
+E-Mail – die digitale Kommunikationsgrundlage jeder Institution Kollaboration – gemeinsames Arbeiten mit Tools wie Nextcloud Motivation: Warum überhaupt unabhängig werden? Die meisten Schulen greifen heute auf eine von zwei Lösungen zurück: Google Workspace for Education oder Microsoft 365. Beide Plattformen sind ausgereifte Produkte, keine Frage – aber sie kommen mit einem erheblichen Haken.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Schule digital unabhängig: Warum wir Google und Microsoft den Rücken kehren sollten",
+      "item": "http://localhost:1313/posts/schule-digital-unabhaengig-serie/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Schule digital unabhängig: Warum wir Google und Microsoft den Rücken kehren sollten",
+  "name": "Schule digital unabhängig: Warum wir Google und Microsoft den Rücken kehren sollten",
+  "description": "Die Idee hinter „Schule digital unabhängig\u0026quot; Ich starte eine neue Blog- und Videoreihe, die mir schon lange am Herzen liegt: „Schule digital unabhängig\u0026quot;. In dieser Reihe möchte ich zeigen, wie Schulen – aber auch andere Bildungseinrichtungen – ihre digitale Infrastruktur so aufbauen können, dass sie nicht länger von großen amerikanischen Tech-Konzernen abhängig sind. Der Fokus liegt dabei auf zwei zentralen Themenbereichen:\nE-Mail – die digitale Kommunikationsgrundlage jeder Institution Kollaboration – gemeinsames Arbeiten mit Tools wie Nextcloud Motivation: Warum überhaupt unabhängig werden? Die meisten Schulen greifen heute auf eine von zwei Lösungen zurück: Google Workspace for Education oder Microsoft 365. Beide Plattformen sind ausgereifte Produkte, keine Frage – aber sie kommen mit einem erheblichen Haken.\n",
+  "keywords": [
+    "Open Source", "Schule", "Datenschutz", "Nextcloud", "Mailcow"
+  ],
+  "articleBody": "Die Idee hinter „Schule digital unabhängig\" Ich starte eine neue Blog- und Videoreihe, die mir schon lange am Herzen liegt: „Schule digital unabhängig\". In dieser Reihe möchte ich zeigen, wie Schulen – aber auch andere Bildungseinrichtungen – ihre digitale Infrastruktur so aufbauen können, dass sie nicht länger von großen amerikanischen Tech-Konzernen abhängig sind. Der Fokus liegt dabei auf zwei zentralen Themenbereichen:\nE-Mail – die digitale Kommunikationsgrundlage jeder Institution Kollaboration – gemeinsames Arbeiten mit Tools wie Nextcloud Motivation: Warum überhaupt unabhängig werden? Die meisten Schulen greifen heute auf eine von zwei Lösungen zurück: Google Workspace for Education oder Microsoft 365. Beide Plattformen sind ausgereifte Produkte, keine Frage – aber sie kommen mit einem erheblichen Haken.\nGoogle und Microsoft sind amerikanische Unternehmen, die dem US-amerikanischen Recht unterliegen. Das bedeutet konkret: Unsere Schülerdaten, Lehrerkommunikation und interne Dokumente liegen auf Servern, über die wir nur begrenzte Kontrolle haben. Mit dem CLOUD Act hat die US-Regierung weitreichende Möglichkeiten, auf diese Daten zuzugreifen – unabhängig davon, ob die Server physisch in Europa stehen oder nicht. Das ist aus datenschutzrechtlicher Sicht, insbesondere im Hinblick auf die DSGVO, höchst problematisch.\nWenn wir ein neues System einführen, sollten wir nicht einfach die nächste Sackgasse wählen.\nGenau das ist mein zentrales Argument: Wer heute von Google zu Microsoft wechselt (oder umgekehrt), löst das eigentliche Problem nicht. Man tauscht lediglich einen Anbieter gegen einen anderen aus und bleibt genauso abhängig wie zuvor. Die Lösung liegt in quelloffener Software – also Open-Source-Lösungen, die von verschiedenen Anbietern gehostet oder sogar selbst betrieben werden können.\nWas ist quelloffene Software und warum ist sie der Schlüssel? Open-Source-Software hat mehrere entscheidende Vorteile gegenüber proprietären Lösungen:\nTransparenz: Der Quellcode ist öffentlich einsehbar. Jede und jeder kann nachprüfen, was die Software tatsächlich mit den Daten macht. Anbieterunabhängigkeit: Man ist nicht an einen einzigen Hersteller gebunden. Wer heute selbst hostet, kann morgen zu einem anderen Dienstleister wechseln – der Quellcode bleibt derselbe. Community und Langlebigkeit: Beliebte Open-Source-Projekte werden von großen Communities gepflegt und entwickeln sich kontinuierlich weiter. Kostenstruktur: Die Software selbst ist meist kostenlos. Es fallen lediglich Hosting- und Betriebskosten an, über die man selbst die volle Kontrolle hat. Die Inhalte der Reihe im Überblick 📧 Kapitel 1: E-Mail mit Mailcow Das erste große Thema der Reihe ist E-Mail. Als konkrete Lösung werde ich Mailcow vorstellen – eine vollständige, Docker-basierte E-Mail-Server-Suite, die sich für den schulischen Einsatz eignet.\nIn einem eigenen Beitrag und Video werde ich folgende Aspekte beleuchten:\nÜberlegungen: Was braucht eine Schule wirklich von einem E-Mail-System? Bedenken und Problematik: Wo liegen die Herausforderungen beim Selbsthosting? Stichwort: Wartung, Spam-Abwehr, Ausfallsicherheit. Chancen: Volle Datenkontrolle, DSGVO-Konformität, individuelle Anpassbarkeit. Risiken: Was passiert, wenn der Server ausfällt? Wie sieht es mit Backups aus? Kosten: Ein realistischer Vergleich – was kostet Mailcow im Betrieb wirklich, und wie steht das im Verhältnis zu kommerziellen Alternativen? ☁️ Kapitel 2: Kollaboration mit Nextcloud Der zweite große Schwerpunkt ist Nextcloud – die wohl bekannteste Open-Source-Lösung für kollaboratives Arbeiten in der Cloud. Hier plane ich nicht nur ein einzelnes Video, sondern eine ganze Unter-Reihe, da das Thema so vielschichtig ist:\nNextcloud Dateien: Die Grundlage – sicheres Speichern, Teilen und gemeinsames Bearbeiten von Dokumenten, direkt im Browser oder per Desktop-Client. Nextcloud Talk: Die integrierte Kommunikationslösung für Chat, Audio- und Videokonferenzen – eine echte Alternative zu Teams oder Meet. Nextcloud Teams / Groupware: Kalender, Kontakte und Aufgaben für das gesamte Kollegium – koordiniertes Arbeiten ohne externe Abhängigkeiten. Jeder dieser Bereiche verdient eine eigene, tiefergehende Betrachtung, und genau das werden wir uns in den kommenden Beiträgen vornehmen.\n🔐 Optional: Passwortmanagement mit Vaultwarden Als ergänzendes Thema überlege ich außerdem, einen Beitrag zu Vaultwarden zu erstellen. Vaultwarden ist ein selbst gehosteter, Open-Source-kompatibler Server für den bekannten Passwortmanager Bitwarden. Gerade in Schulen, wo viele Menschen mit vielen verschiedenen Diensten arbeiten, ist ein zentraler, sicherer Passwortmanager Gold wert – und ein selbst gehosteter erst recht.\nWie geht es weiter? Die Reihe „Schule digital unabhängig\" wird sowohl hier im Blog als auch als Videoreihe erscheinen. Mein Ziel ist es, nicht nur Konzepte vorzustellen, sondern praktische Anleitungen zu liefern, die wirklich umsetzbar sind – auch für Menschen, die keine tiefen Serverkenntnisse mitbringen.\nWenn dich das Thema interessiert, freue ich mich über deinen Kommentar: Welche Herausforderungen siehst du beim Einsatz von Open-Source-Lösungen in deiner Schule? Was würde dich am meisten interessieren?\nBis zum nächsten Beitrag – und dann tauchen wir tief in die Welt von Mailcow ein. 🚀\n",
+  "wordCount" : "720",
+  "inLanguage": "de",
+  "datePublished": "2026-05-05T00:00:00Z",
+  "dateModified": "2026-05-05T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Stefan Dahlmann"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/schule-digital-unabhaengig-serie/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DahlmannOnline Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="DahlmannOnline Blog (Alt + H)">DahlmannOnline Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="Beiträge">
+                    <span>Beiträge</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archiv">
+                    <span>Archiv</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/suche/" title="Suche (Alt &#43; /)" accesskey=/>
+                    <span>Suche</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    <a href='http://localhost:1313/'>Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="http://localhost:1313/posts/">Posts</a></nav>
+    <h1 class="post-title entry-hint-parent">
+      Schule digital unabhängig: Warum wir Google und Microsoft den Rücken kehren sollten
+    </h1>
+    <div class="post-meta"><span title='2026-05-05 00:00:00 +0000 UTC'>5. Mai 2026</span>&nbsp;·&nbsp;<span>4 Minuten</span>&nbsp;·&nbsp;<span>Stefan Dahlmann</span>
+
+</div>
+  </header> <details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Inhaltsverzeichnis</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#die-idee-hinter-schule-digital-unabh%c3%a4ngig" aria-label="Die Idee hinter „Schule digital unabhängig&quot;">Die Idee hinter „Schule digital unabhängig&quot;</a></li>
+            <li>
+                <a href="#motivation-warum-%c3%bcberhaupt-unabh%c3%a4ngig-werden" aria-label="Motivation: Warum überhaupt unabhängig werden?">Motivation: Warum überhaupt unabhängig werden?</a></li>
+            <li>
+                <a href="#was-ist-quelloffene-software-und-warum-ist-sie-der-schl%c3%bcssel" aria-label="Was ist quelloffene Software und warum ist sie der Schlüssel?">Was ist quelloffene Software und warum ist sie der Schlüssel?</a></li>
+            <li>
+                <a href="#die-inhalte-der-reihe-im-%c3%bcberblick" aria-label="Die Inhalte der Reihe im Überblick">Die Inhalte der Reihe im Überblick</a><ul>
+                    
+            <li>
+                <a href="#-kapitel-1-e-mail-mit-mailcow" aria-label="📧 Kapitel 1: E-Mail mit Mailcow">📧 Kapitel 1: E-Mail mit Mailcow</a></li>
+            <li>
+                <a href="#-kapitel-2-kollaboration-mit-nextcloud" aria-label="☁️ Kapitel 2: Kollaboration mit Nextcloud">☁️ Kapitel 2: Kollaboration mit Nextcloud</a></li>
+            <li>
+                <a href="#-optional-passwortmanagement-mit-vaultwarden" aria-label="🔐 Optional: Passwortmanagement mit Vaultwarden">🔐 Optional: Passwortmanagement mit Vaultwarden</a></li></ul>
+            </li>
+            <li>
+                <a href="#wie-geht-es-weiter" aria-label="Wie geht es weiter?">Wie geht es weiter?</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><h2 id="die-idee-hinter-schule-digital-unabhängig">Die Idee hinter „Schule digital unabhängig&quot;<a hidden class="anchor" aria-hidden="true" href="#die-idee-hinter-schule-digital-unabhängig">#</a></h2>
+<p>Ich starte eine neue Blog- und Videoreihe, die mir schon lange am Herzen liegt: <strong>„Schule digital unabhängig&quot;</strong>. In dieser Reihe möchte ich zeigen, wie Schulen – aber auch andere Bildungseinrichtungen – ihre digitale Infrastruktur so aufbauen können, dass sie nicht länger von großen amerikanischen Tech-Konzernen abhängig sind. Der Fokus liegt dabei auf zwei zentralen Themenbereichen:</p>
+<ol>
+<li><strong>E-Mail</strong> – die digitale Kommunikationsgrundlage jeder Institution</li>
+<li><strong>Kollaboration</strong> – gemeinsames Arbeiten mit Tools wie Nextcloud</li>
+</ol>
+<hr>
+<h2 id="motivation-warum-überhaupt-unabhängig-werden">Motivation: Warum überhaupt unabhängig werden?<a hidden class="anchor" aria-hidden="true" href="#motivation-warum-überhaupt-unabhängig-werden">#</a></h2>
+<p>Die meisten Schulen greifen heute auf eine von zwei Lösungen zurück: <strong>Google Workspace for Education</strong> oder <strong>Microsoft 365</strong>. Beide Plattformen sind ausgereifte Produkte, keine Frage – aber sie kommen mit einem erheblichen Haken.</p>
+<p>Google und Microsoft sind amerikanische Unternehmen, die dem US-amerikanischen Recht unterliegen. Das bedeutet konkret: Unsere Schülerdaten, Lehrerkommunikation und interne Dokumente liegen auf Servern, über die wir nur begrenzte Kontrolle haben. Mit dem <strong>CLOUD Act</strong> hat die US-Regierung weitreichende Möglichkeiten, auf diese Daten zuzugreifen – unabhängig davon, ob die Server physisch in Europa stehen oder nicht. Das ist aus datenschutzrechtlicher Sicht, insbesondere im Hinblick auf die <strong>DSGVO</strong>, höchst problematisch.</p>
+<blockquote>
+<p>Wenn wir ein neues System einführen, sollten wir nicht einfach die nächste Sackgasse wählen.</p>
+</blockquote>
+<p>Genau das ist mein zentrales Argument: Wer heute von Google zu Microsoft wechselt (oder umgekehrt), löst das eigentliche Problem nicht. Man tauscht lediglich einen Anbieter gegen einen anderen aus und bleibt genauso abhängig wie zuvor. Die Lösung liegt in <strong>quelloffener Software</strong> – also Open-Source-Lösungen, die von verschiedenen Anbietern gehostet oder sogar selbst betrieben werden können.</p>
+<hr>
+<h2 id="was-ist-quelloffene-software-und-warum-ist-sie-der-schlüssel">Was ist quelloffene Software und warum ist sie der Schlüssel?<a hidden class="anchor" aria-hidden="true" href="#was-ist-quelloffene-software-und-warum-ist-sie-der-schlüssel">#</a></h2>
+<p>Open-Source-Software hat mehrere entscheidende Vorteile gegenüber proprietären Lösungen:</p>
+<ul>
+<li><strong>Transparenz</strong>: Der Quellcode ist öffentlich einsehbar. Jede und jeder kann nachprüfen, was die Software tatsächlich mit den Daten macht.</li>
+<li><strong>Anbieterunabhängigkeit</strong>: Man ist nicht an einen einzigen Hersteller gebunden. Wer heute selbst hostet, kann morgen zu einem anderen Dienstleister wechseln – der Quellcode bleibt derselbe.</li>
+<li><strong>Community und Langlebigkeit</strong>: Beliebte Open-Source-Projekte werden von großen Communities gepflegt und entwickeln sich kontinuierlich weiter.</li>
+<li><strong>Kostenstruktur</strong>: Die Software selbst ist meist kostenlos. Es fallen lediglich Hosting- und Betriebskosten an, über die man selbst die volle Kontrolle hat.</li>
+</ul>
+<hr>
+<h2 id="die-inhalte-der-reihe-im-überblick">Die Inhalte der Reihe im Überblick<a hidden class="anchor" aria-hidden="true" href="#die-inhalte-der-reihe-im-überblick">#</a></h2>
+<h3 id="-kapitel-1-e-mail-mit-mailcow">📧 Kapitel 1: E-Mail mit Mailcow<a hidden class="anchor" aria-hidden="true" href="#-kapitel-1-e-mail-mit-mailcow">#</a></h3>
+<p>Das erste große Thema der Reihe ist <strong>E-Mail</strong>. Als konkrete Lösung werde ich <strong>Mailcow</strong> vorstellen – eine vollständige, Docker-basierte E-Mail-Server-Suite, die sich für den schulischen Einsatz eignet.</p>
+<p>In einem eigenen Beitrag und Video werde ich folgende Aspekte beleuchten:</p>
+<ul>
+<li><strong>Überlegungen</strong>: Was braucht eine Schule wirklich von einem E-Mail-System?</li>
+<li><strong>Bedenken und Problematik</strong>: Wo liegen die Herausforderungen beim Selbsthosting? Stichwort: Wartung, Spam-Abwehr, Ausfallsicherheit.</li>
+<li><strong>Chancen</strong>: Volle Datenkontrolle, DSGVO-Konformität, individuelle Anpassbarkeit.</li>
+<li><strong>Risiken</strong>: Was passiert, wenn der Server ausfällt? Wie sieht es mit Backups aus?</li>
+<li><strong>Kosten</strong>: Ein realistischer Vergleich – was kostet Mailcow im Betrieb wirklich, und wie steht das im Verhältnis zu kommerziellen Alternativen?</li>
+</ul>
+<hr>
+<h3 id="-kapitel-2-kollaboration-mit-nextcloud">☁️ Kapitel 2: Kollaboration mit Nextcloud<a hidden class="anchor" aria-hidden="true" href="#-kapitel-2-kollaboration-mit-nextcloud">#</a></h3>
+<p>Der zweite große Schwerpunkt ist <strong>Nextcloud</strong> – die wohl bekannteste Open-Source-Lösung für kollaboratives Arbeiten in der Cloud. Hier plane ich nicht nur ein einzelnes Video, sondern eine <strong>ganze Unter-Reihe</strong>, da das Thema so vielschichtig ist:</p>
+<ul>
+<li><strong>Nextcloud Dateien</strong>: Die Grundlage – sicheres Speichern, Teilen und gemeinsames Bearbeiten von Dokumenten, direkt im Browser oder per Desktop-Client.</li>
+<li><strong>Nextcloud Talk</strong>: Die integrierte Kommunikationslösung für Chat, Audio- und Videokonferenzen – eine echte Alternative zu Teams oder Meet.</li>
+<li><strong>Nextcloud Teams / Groupware</strong>: Kalender, Kontakte und Aufgaben für das gesamte Kollegium – koordiniertes Arbeiten ohne externe Abhängigkeiten.</li>
+</ul>
+<p>Jeder dieser Bereiche verdient eine eigene, tiefergehende Betrachtung, und genau das werden wir uns in den kommenden Beiträgen vornehmen.</p>
+<hr>
+<h3 id="-optional-passwortmanagement-mit-vaultwarden">🔐 Optional: Passwortmanagement mit Vaultwarden<a hidden class="anchor" aria-hidden="true" href="#-optional-passwortmanagement-mit-vaultwarden">#</a></h3>
+<p>Als ergänzendes Thema überlege ich außerdem, einen Beitrag zu <strong>Vaultwarden</strong> zu erstellen. Vaultwarden ist ein selbst gehosteter, Open-Source-kompatibler Server für den bekannten Passwortmanager <strong>Bitwarden</strong>. Gerade in Schulen, wo viele Menschen mit vielen verschiedenen Diensten arbeiten, ist ein zentraler, sicherer Passwortmanager Gold wert – und ein selbst gehosteter erst recht.</p>
+<hr>
+<h2 id="wie-geht-es-weiter">Wie geht es weiter?<a hidden class="anchor" aria-hidden="true" href="#wie-geht-es-weiter">#</a></h2>
+<p>Die Reihe „Schule digital unabhängig&quot; wird sowohl hier im Blog als auch als Videoreihe erscheinen. Mein Ziel ist es, nicht nur Konzepte vorzustellen, sondern <strong>praktische Anleitungen</strong> zu liefern, die wirklich umsetzbar sind – auch für Menschen, die keine tiefen Serverkenntnisse mitbringen.</p>
+<p>Wenn dich das Thema interessiert, freue ich mich über deinen Kommentar: Welche Herausforderungen siehst du beim Einsatz von Open-Source-Lösungen in deiner Schule? Was würde dich am meisten interessieren?</p>
+<p>Bis zum nächsten Beitrag – und dann tauchen wir tief in die Welt von <strong>Mailcow</strong> ein. 🚀</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/open-source/">Open Source</a></li>
+      <li><a href="http://localhost:1313/tags/schule/">Schule</a></li>
+      <li><a href="http://localhost:1313/tags/datenschutz/">Datenschutz</a></li>
+      <li><a href="http://localhost:1313/tags/nextcloud/">Nextcloud</a></li>
+      <li><a href="http://localhost:1313/tags/mailcow/">Mailcow</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/posts/korrekturen-schneller-mit-excel/">
+    <span class="title">Nächste »</span>
+    <span>Korrekturhilfe für Lehrerinnen und Lehrer: Automatisiert ausgefüllter Erwartungshorizont mit Excel und Word</span>
+  </a>
+</nav>
+
+  </footer><script src="https://giscus.app/client.js"
+        data-repo="stefan2030/DahlmannOnlineBlog"
+        data-repo-id="R_kgDOSNEy1g"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOSNEy1s4C8Po2"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="de"
+        crossorigin="anonymous"
+        async>
+</script>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">DahlmannOnline Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'Kopieren';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'Kopiert!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'Kopieren';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
