@@ -2,7 +2,7 @@
 title: "Schule digital unabhängig #00: Warum wir Google und Microsoft den Rücken kehren sollten"
 date: 2026-05-05
 draft: false
-tags: ["Open Source", "Schule", "Datenschutz", "Nextcloud", "Mailcow"]
+tags: ["Schule digital unabgängig", "Open Source", "Schule", "Datenschutz", "Nextcloud", "Mailcow"]
 ---
 
 ## Die Idee hinter „Schule digital unabhängig"
