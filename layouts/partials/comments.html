@@ -1,15 +1,31 @@
-<script src="https://giscus.app/client.js"
-        data-repo="stefan2030/DahlmannOnlineBlog"
-        data-repo-id="R_kgDOSNEy1g"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOSNEy1s4C8Po2"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="de"
-        crossorigin="anonymous"
-        async>
+<section class="comments-consent" aria-labelledby="comments-heading">
+  <h2 id="comments-heading">Kommentare</h2>
+  <p>Kommentare werden über Giscus/GitHub bereitgestellt. Erst nach dem bewussten Laden wird eine Verbindung zu GitHub und Giscus aufgebaut. Dabei können insbesondere IP-Adresse, Browserdaten und die aufgerufene Seite übertragen werden. Details stehen in der <a href="{{ "datenschutz/" | relURL }}#giscus-kommentare">Datenschutzerklärung</a>.</p>
+  <button type="button" class="external-consent-button" data-giscus-load>Kommentare laden</button>
+  <div class="giscus-container" aria-live="polite"></div>
+</section>
+<script>
+(() => {
+  const button = document.querySelector('[data-giscus-load]');
+  if (!button) return;
+  button.addEventListener('click', () => {
+    button.disabled = true;
+    button.textContent = 'Kommentare werden geladen …';
+    const script = document.createElement('script');
+    Object.assign(script, { src: 'https://giscus.app/client.js', async: true, crossOrigin: 'anonymous' });
+    const data = {
+      repo: 'stefan2030/DahlmannOnlineBlog',
+      'repo-id': 'R_kgDOSNEy1g',
+      category: 'Announcements',
+      'category-id': 'DIC_kwDOSNEy1s4C8Po2',
+      mapping: 'pathname', strict: '0', 'reactions-enabled': '1',
+      'emit-metadata': '0', 'input-position': 'bottom',
+      theme: 'preferred_color_scheme', lang: 'de'
+    };
+    for (const [key, value] of Object.entries(data)) script.setAttribute(`data-${key}`, value);
+    script.addEventListener('load', () => button.remove());
+    script.addEventListener('error', () => { button.disabled = false; button.textContent = 'Kommentare konnten nicht geladen werden – erneut versuchen'; });
+    document.querySelector('.giscus-container').appendChild(script);
+  }, { once: true });
+})();
 </script>

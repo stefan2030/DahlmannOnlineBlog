@@ -1,0 +1,12 @@
+{{- $type := .Params.content_type | default "beitrag" -}}
+{{- $typeLabels := dict "arbeitshilfe" "Erprobte Arbeitshilfe" "meinungsbeitrag" "Persönlicher Beitrag / Konzept" "beitrag" "Persönlicher Beitrag" -}}
+{{- $statusLabels := dict "persoenlich" "Keine offizielle Schulanleitung" -}}
+<aside class="knowledge-meta" aria-label="Einordnung und Aktualität">
+  <span class="knowledge-badge knowledge-badge--type">{{ index $typeLabels $type | default ($type | humanize) }}</span>
+  {{- with .Params.school_status }}
+  <span class="knowledge-badge">{{ index $statusLabels . | default (. | humanize) }}</span>
+  {{- end }}
+  {{- with .Params.audience }}<span class="knowledge-badge">Für: {{ . }}</span>{{ end }}
+  {{- with .Params.last_reviewed }}<span class="knowledge-badge">Geprüft: {{ time.Format "02.01.2006" . }}</span>{{ end }}
+  {{- with .Params.software_versions }}<span class="knowledge-badge">Stand: {{ . }}</span>{{ end }}
+</aside>

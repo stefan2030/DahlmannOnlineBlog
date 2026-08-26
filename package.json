@@ -1,0 +1,19 @@
+{
+  "name": "dahlmannonline-blog",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "hugo --gc --minify --cleanDestinationDir && pagefind --site public --output-subdir pagefind",
+    "test:static": "python3 tests/static_contract.py",
+    "test:links": "python3 tests/link_check.py",
+    "test:browser": "node tests/run-browser.mjs",
+    "test": "npm run build && npm run test:static && npm run test:links && npm run test:browser"
+  },
+  "dependencies": {
+    "pagefind": "1.5.2"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.10.2",
+    "playwright": "1.62.1"
+  }
+}

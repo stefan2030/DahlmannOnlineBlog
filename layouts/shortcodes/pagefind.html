@@ -1,30 +1,42 @@
-<!-- Pagefind Styles und Scripte laden -->
-<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-<script src="/pagefind/pagefind-ui.js" type="text/javascript"></script>
-
-<!-- Hier wird das Suchfeld generiert -->
-<div id="search"></div>
-
-<!-- Suchfeld aktivieren -->
+<link href="{{ "pagefind/pagefind-ui.css" | relURL }}" rel="stylesheet">
+<script src="{{ "pagefind/pagefind-ui.js" | relURL }}" defer></script>
+<label class="search-label" for="pagefind-search-input">Blogartikel durchsuchen</label>
+<div id="search" role="search" aria-label="Blogartikel durchsuchen"></div>
+<noscript><p>Für die Suche muss JavaScript aktiviert sein. Alle Artikel stehen alternativ unter <a href="{{ "posts/" | relURL }}">Beiträge</a>.</p></noscript>
 <script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-        new PagefindUI({ 
-            element: "#search", 
-            showSubResults: true,
-            bundlePath: "/pagefind/",
-            translations: {
-                placeholder: "Blog durchsuchen...",
-                clear_search: "Löschen",
-                load_more: "Mehr Ergebnisse laden",
-                search_label: "Suche nach diesem Blog",
-                filters_label: "Filter",
-                zero_results: "Keine Ergebnisse für [SEARCH_TERM]",
-                many_results: "[COUNT] Ergebnisse für [SEARCH_TERM]",
-                one_result: "[COUNT] Ergebnis für [SEARCH_TERM]",
-                alt_search: "Keine Ergebnisse für [SEARCH_TERM]. Zeige stattdessen Ergebnisse für [DIFFERENT_TERM]",
-                search_suggestion: "Keine Ergebnisse für [SEARCH_TERM]. Meintest du [DIFFERENT_TERM]?",
-                searching: "Suche nach [SEARCH_TERM]..."
-            }
-        });
+  window.addEventListener('DOMContentLoaded', () => {
+    if (typeof PagefindUI === 'undefined') {
+      document.getElementById('search').textContent = 'Die Suche konnte nicht geladen werden. Bitte später erneut versuchen.';
+      return;
+    }
+    const search = document.getElementById('search');
+    const connectLabel = () => {
+      const input = search.querySelector('.pagefind-ui__search-input');
+      if (!input) return false;
+      input.id = 'pagefind-search-input';
+      return true;
+    };
+    const observer = new MutationObserver(() => {
+      if (connectLabel()) observer.disconnect();
     });
+    observer.observe(search, { childList: true, subtree: true });
+    new PagefindUI({
+      element: '#search',
+      showSubResults: true,
+      bundlePath: '{{ "pagefind/" | relURL }}',
+      translations: {
+        placeholder: 'Artikel durchsuchen …',
+        clear_search: 'Löschen',
+        load_more: 'Mehr Ergebnisse laden',
+        search_label: 'Blogartikel durchsuchen',
+        filters_label: 'Filter',
+        zero_results: 'Keine Ergebnisse für [SEARCH_TERM]',
+        many_results: '[COUNT] Ergebnisse für [SEARCH_TERM]',
+        one_result: '[COUNT] Ergebnis für [SEARCH_TERM]',
+        alt_search: 'Keine Ergebnisse für [SEARCH_TERM]. Stattdessen Ergebnisse für [DIFFERENT_TERM]',
+        search_suggestion: 'Keine Ergebnisse für [SEARCH_TERM]. Meintest du [DIFFERENT_TERM]?',
+        searching: 'Suche nach [SEARCH_TERM] …'
+      }
+    });
+  });
 </script>

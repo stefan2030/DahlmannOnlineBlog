@@ -1,0 +1,60 @@
+{{- if not (.Param "hideFooter") }}
+<footer class="footer">
+  <nav class="footer-legal" aria-label="Rechtliche Informationen">
+    <a href="{{ "impressum/" | relURL }}">Impressum</a>
+    <span aria-hidden="true"> · </span>
+    <a href="{{ "datenschutz/" | relURL }}">Datenschutz</a>
+  </nav>
+  <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
+  <span aria-hidden="true"> · </span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp; <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener noreferrer" target="_blank">PaperMod</a></span>
+</footer>
+{{- end }}
+{{- if (not site.Params.disableScrollToTop) }}
+<a href="#top" id="top-link" class="top-link hidden" aria-label="Nach oben" title="Nach oben (Alt + G)" accesskey="g">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
+</a>
+{{- end }}
+{{- partial "extend_footer.html" . }}
+<script>
+  const menu = document.getElementById('menu');
+  if (menu) {
+    const scrollPosition = localStorage.getItem('menu-scroll-position');
+    if (scrollPosition) menu.scrollLeft = parseInt(scrollPosition, 10);
+    menu.onscroll = () => localStorage.setItem('menu-scroll-position', menu.scrollLeft);
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => anchor.addEventListener('click', function (event) {
+    const id = this.getAttribute('href').substring(1);
+    const target = document.getElementById(decodeURIComponent(id));
+    if (!target) return;
+    event.preventDefault();
+    target.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    if (id === 'top') history.replaceState(null, '', location.pathname + location.search);
+    else history.pushState(null, '', `#${id}`);
+  }));
+</script>
+{{- if (not site.Params.disableScrollToTop) }}
+<script>
+  const toplink = document.getElementById('top-link');
+  window.addEventListener('scroll', () => toplink.classList.toggle('hidden', document.documentElement.scrollTop <= window.innerHeight));
+</script>
+{{- end }}
+{{- if (not site.Params.disableThemeToggle) }}
+<script>
+  document.getElementById('theme-toggle')?.addEventListener('click', () => {
+    const html = document.documentElement;
+    html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('pref-theme', html.dataset.theme);
+  });
+</script>
+{{- end }}
+{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "ShowCodeCopyButtons")) }}
+<script>
+  document.querySelectorAll('pre > code').forEach(codeblock => {
+    const button = document.createElement('button');
+    button.className = 'copy-code'; button.textContent = '{{ i18n "code_copy" | default "kopieren" }}';
+    button.addEventListener('click', async () => { await navigator.clipboard.writeText(codeblock.textContent); button.textContent = '{{ i18n "code_copied" | default "kopiert" }}'; setTimeout(() => button.textContent = '{{ i18n "code_copy" | default "kopieren" }}', 2000); });
+    codeblock.parentNode.appendChild(button);
+  });
+</script>
+{{- end }}

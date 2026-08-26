@@ -1,0 +1,8 @@
+{{- /* Make actually-scrollable code/pre elements keyboard-focusable (axe scrollable-region-focusable). */ -}}
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('pre, .md-content code').forEach(el => {
+      if (el.scrollWidth > el.clientWidth && !el.hasAttribute('tabindex')) el.setAttribute('tabindex', '0');
+    });
+  });
+</script>

@@ -1,15 +1,32 @@
 ---
-title: "Automatisierte Quiz-Generierung mit KI und Microsoft Forms"
+title: "Quiz-Generierung mit KI und Microsoft Forms"
 date: 2025-01-30
 draft: false
+description: "Eine erprobte Arbeitshilfe, um Quizfragen mit KI vorzubereiten, fachlich zu prüfen und per Schnellimport in Microsoft Forms zu übernehmen."
+content_type: "arbeitshilfe"
+audience: "Lehrerinnen und Lehrer"
+last_reviewed: 2026-08-26
+school_status: "persoenlich"
+software_versions: "Microsoft Forms und generative KI-Angebote; geprüft August 2026"
+duration: "ca. 30–60 Minuten für ein erstes geprüftes Quiz"
 tags: ["Microsoft Forms", "Künstliche Intelligenz", "Unterricht", "Quiz", "ChatGPT"]
+categories:
+  - Unterricht und KI
 ---
 
-{{< youtube qbzK9sLekJ4 >}}
+## Kurzüberblick
+
+- **Für wen:** Lehrkräfte, die aus eigenen Notizen einen kontrollierten Quizentwurf erstellen möchten.
+- **Ziel:** KI-generierte Fragen fachlich und didaktisch prüfen, in Word strukturieren und in Microsoft Forms importieren.
+- **Voraussetzungen und Rechte:** Zugriff auf ein freigegebenes KI-Angebot und Microsoft Forms; keine personenbezogenen Schülerdaten oder nicht freigegebenen Materialien hochladen.
+- **Dauer:** Etwa 30–60 Minuten einschließlich fachlicher Prüfung und Testdurchlauf.
+- **Geprüfter Stand:** 26.08.2026. KI-Modelle, Tarife und Forms-Menüs ändern sich; die Videos zeigen einen früheren Oberflächenstand.
+
+{{< youtube id="qbzK9sLekJ4" title="Teil 1: Quizfragen mit KI vorbereiten" >}}
 
 [Hier geht's zu Teil 1 auf YouTube](https://youtu.be/qbzK9sLekJ4)
 
-{{< youtube b4VGXZfHs-M >}}
+{{< youtube id="b4VGXZfHs-M" title="Teil 2: Quiz in Microsoft Forms importieren" >}}
 
 [Hier geht's zu Teil 2 auf YouTube](https://youtu.be/b4VGXZfHs-M)
 
@@ -119,9 +136,28 @@ Nach der Durchführung stehen alle Ergebnisse direkt in Microsoft Forms zur Verf
 
 Der gesamte Workflow von den Unterrichtsnotizen bis zum fertigen, automatisch korrigierten Online-Quiz lässt sich in wenigen Minuten umsetzen:
 
-- ✅ Kein manuelles Erstellen von Fragen
-- ✅ Automatische Korrektur durch Microsoft Forms
-- ✅ Zufällige Fragenreihenfolge gegen Abschreiben
+- ✅ Fragenentwurf schneller vorbereitbar
+- ✅ Fachliche und didaktische Kontrolle bleibt bei der Lehrkraft
+- ✅ Zufällige Fragenreihenfolge als eine mögliche Einstellung
 - ✅ Ergebnisse direkt auswertbar
 
-Viel Erfolg beim Nachbauen!
+Vor der Verwendung mit einer Lerngruppe das Quiz selbst vollständig durchspielen, Lösungen und Punkte prüfen und die schulischen Vorgaben zu KI, Konten, Einwilligungen und Leistungsdaten beachten.
+
+## Erfolgskontrolle
+
+Ein Testkonto kann das Quiz öffnen und abschließen; alle richtigen Antworten, Punktwerte, Pflichtfelder, Freigabezeitpunkte und Ergebnisanzeigen entsprechen der beabsichtigten Unterrichtssituation. KI-Ausgaben wurden gegen die eigenen Unterrichtsgrundlagen geprüft.
+
+## Häufige Fehler und Lösungen
+
+- **Forms erkennt das Word-Dokument nicht korrekt:** Schlicht formatieren, Fragen eindeutig nummerieren und Import anschließend vollständig prüfen.
+- **KI erfindet oder vereinfacht Inhalte:** Jede Frage und jede Lösung fachlich gegen belastbare Unterrichtsquellen prüfen.
+- **Nicht freigegebene Daten/Materialien hochgeladen:** Nur freigegebene Dienste und Inhalte verwenden; keine Schülerdaten und keine unklar lizenzierten Buchseiten/Screenshots an externe KI-Dienste übermitteln.
+
+## Quellen und Stand
+
+Geprüft am 26.08.2026:
+
+- [Microsoft Support: Word- oder PDF-Formular bzw. Quiz in Microsoft Forms importieren](https://support.microsoft.com/de-de/office/konvertieren-eines-word-oder-pdf-formulars-oder-tests-in-microsoft-forms-66b7e9bc-eb0d-4c65-b7e6-f9f92dcd71cb)
+- [Microsoft Support: Ein Quiz mit Microsoft Forms erstellen](https://support.microsoft.com/de-de/office/erstellen-eines-quiz-mit-microsoft-forms-a082a018-24a1-48c1-b176-4b3616cdc83d)
+
+Produktnamen und gezeigte Funktionen beschreiben den geprüften Stand; Tarife und Oberflächen können sich ändern.

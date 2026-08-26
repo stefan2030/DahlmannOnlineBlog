@@ -1,0 +1,31 @@
+{{- $id := "" -}}
+{{- $title := "YouTube-Video" -}}
+{{- if .IsNamedParams -}}
+  {{- $id = .Get "id" -}}
+  {{- with .Get "title" }}{{ $title = . }}{{ end -}}
+{{- else -}}
+  {{- $id = .Get 0 -}}
+{{- end -}}
+<div class="youtube-consent" data-youtube-id="{{ $id }}">
+  <p><strong>{{ $title }}</strong></p>
+  <p>Das Video wird erst nach Ihrer bewussten Aktivierung von YouTube geladen. Dabei können Daten an Google/YouTube übertragen werden. <a href="{{ "datenschutz/" | relURL }}#youtube-videos">Mehr zum Datenschutz</a>.</p>
+  <button type="button" class="external-consent-button">YouTube-Video laden</button>
+  <p><a href="https://www.youtube.com/watch?v={{ $id }}" rel="noopener noreferrer" target="_blank">Video direkt auf YouTube öffnen</a></p>
+</div>
+<script>
+(() => {
+  const container = document.currentScript.previousElementSibling;
+  const button = container.querySelector('button');
+  button.addEventListener('click', () => {
+    const id = container.dataset.youtubeId;
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1`;
+    iframe.title = {{ $title | jsonify }};
+    iframe.loading = 'lazy';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    iframe.allowFullscreen = true;
+    container.replaceChildren(iframe);
+  }, { once: true });
+})();
+</script>

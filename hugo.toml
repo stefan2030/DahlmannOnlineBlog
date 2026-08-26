@@ -1,16 +1,21 @@
 baseURL = 'https://blog.dahlmannonline.com/'
-languageCode = 'de-de'
+locale = 'de-DE'
 defaultContentLanguage = 'de'
 title = 'DahlmannOnline Blog'
 theme = 'PaperMod'
+enableRobotsTXT = true
 
 [pagination]
   pagerSize = 10
 
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
 [params]
   env = 'production'
   title = 'DahlmannOnline Blog'
-  description = 'Gedanken, Notizen und Beiträge von Stefan Dahlmann'
+  description = 'Praxisnahe Anleitungen und persönliche Beiträge zu Unterricht, Schul-IT, digitaler Arbeitsorganisation und Open Source.'
   author = 'Stefan Dahlmann'
   defaultTheme = 'auto'
   ShowReadingTime = true
@@ -25,7 +30,13 @@ theme = 'PaperMod'
 
 [params.homeInfoParams]
   Title = 'Willkommen bei DahlmannOnline'
-  Content = 'Ein persönlicher Blog über Technik, Gedanken und Dinge, die mich interessieren.'
+  Content = 'Praxisnahe Anleitungen und persönliche Beiträge zu Unterricht, Schul-IT, digitaler Arbeitsorganisation und Open Source.'
+
+[[menu.main]]
+  identifier = 'anleitungen'
+  name = 'Anleitungen'
+  url = '/anleitungen/'
+  weight = 5
 
 [[menu.main]]
   identifier = 'posts'
@@ -50,3 +61,9 @@ theme = 'PaperMod'
   name = 'Suche'
   url = '/suche/'
   weight = 40
+
+[privacy.youtube]
+  privacyEnhanced = true
+
+[markup.goldmark.renderer]
+  unsafe = true

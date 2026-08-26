@@ -1,0 +1,14 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+  <header class="entry-header"><h1>{{ .Title | markdownify }}</h1></header>
+  <div class="entry-content md-content">
+    {{ $opts := dict "display" "block" }}
+    {{ .Content | $.Page.RenderString $opts }}
+  </div>
+  <div class="home-actions" aria-label="Direkteinstiege">
+    <a class="home-action-primary" href="{{ "anleitungen/" | relURL }}">Anleitungen für Kolleginnen und Kollegen</a>
+    <a class="home-action-secondary" href="{{ "posts/" | relURL }}">Neueste Beiträge</a>
+  </div>
+  <footer class="entry-footer">{{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}</footer>
+</article>
+{{- end -}}

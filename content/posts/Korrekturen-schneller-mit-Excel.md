@@ -2,7 +2,13 @@
 title: "Korrekturhilfe für Lehrerinnen und Lehrer: Automatisiert ausgefüllter Erwartungshorizont mit Excel und Word"
 date: 2026-04-29
 draft: false
-description: "Wie Lehrerinnen und Lehrer mit Excel und Word einen Erwartungshorizont als Serienbrief automatisiert ausfüllen und so Korrekturen effizienter gestalten können."
+description: "Wie sich ein Erwartungshorizont mit Excel als Datenquelle und dem Word-Seriendruck nachvollziehbar befüllen lässt."
+content_type: "arbeitshilfe"
+audience: "Lehrerinnen und Lehrer"
+last_reviewed: 2026-08-26
+school_status: "persoenlich"
+software_versions: "Microsoft 365 Desktop: Excel und Word; geprüft August 2026"
+duration: "ca. 45–90 Minuten für die erste Vorlage"
 tags:
   - Schule
   - Korrektur
@@ -10,8 +16,16 @@ tags:
   - Word
   - Serienbrief
 categories:
-  - Arbeitsorganisation
+  - Microsoft 365
 ---
+
+## Kurzüberblick
+
+- **Für wen:** Lehrkräfte, die wiederkehrende formale Schritte bei Erwartungshorizonten reduzieren möchten.
+- **Ziel:** Eine Excel-Datenquelle mit einer Word-Seriendruckvorlage verbinden und kontrollierte Einzeldokumente erzeugen.
+- **Voraussetzungen und Rechte:** Desktopversionen von Excel und Word sowie ein schulisch freigegebener Speicherort für personenbezogene Leistungsdaten.
+- **Dauer:** Etwa 45–90 Minuten für die erste Vorlage; spätere Durchläufe sind kürzer.
+- **Geprüfter Stand:** 26.08.2026 mit Microsoft-365-Desktopfunktionen; Menübezeichnungen können je nach Version abweichen.
 
 Korrekturen gehören für Lehrerinnen und Lehrer zu den zeitaufwendigsten Aufgaben im Schulalltag. Besonders bei Klassenarbeiten, Klausuren oder Tests mit vielen Schülerinnen und Schülern wiederholen sich viele Arbeitsschritte immer wieder.
 
@@ -386,4 +400,23 @@ Wer regelmäßig Klassenarbeiten, Klausuren oder Tests korrigiert, sollte diese 
 
 ## Zugang zur Vorlage
 
-Ihr könnt euch meine Vorlage hier herunterladen: [Vorlage und Anleitung im PDF Format](/downloads/Korrektur-Excel-mit-Serienbrief-als_Arbeitserleichterung.zip)
+Ihr könnt euch meine Vorlage hier herunterladen: [Vorlage und Anleitung im PDF-Format](/downloads/Korrektur-Excel-mit-Serienbrief-als_Arbeitserleichterung.zip)
+
+## Erfolgskontrolle
+
+Vor dem Einsatz mit echten Daten mindestens zwei fiktive Datensätze testen. Namen, Punkte, Formeln, Notengrenzen, Kommentare, Seitenumbrüche und die Zuordnung aller Seriendruckfelder kontrollieren. Erst danach eine Kopie mit realen Daten an einem schulisch freigegebenen Speicherort verwenden.
+
+## Häufige Fehler und Lösungen
+
+- **Word findet Spalten nicht:** Excel-Datei schließen, eindeutige Spaltenüberschriften ohne zusammengeführte Zellen verwenden und Datenquelle neu verbinden.
+- **Falscher Datensatz/alte Werte:** In der Vorschau mehrere Datensätze durchschalten und den fertigen Seriendruck stichprobenartig abgleichen.
+- **Personenbezogene Daten am falschen Ort:** Nur freigegebene Endgeräte und Speicherorte nutzen; lokale Vorgaben haben Vorrang vor dieser Arbeitshilfe.
+
+## Quellen und Stand
+
+Geprüft am 26.08.2026:
+
+- [Microsoft Support: Seriendruck mit einer Excel-Tabelle](https://support.microsoft.com/de-de/office/seriendruck-mit-einer-excel-tabelle-858c7d7f-5cc0-4ba1-9a7d-0a948fa3d7d3)
+- [Microsoft Support: Einrichten einer neuen Seriendruckliste mit Word](https://support.microsoft.com/de-de/office/einrichten-einer-neuen-seriendruckliste-mit-word-1a752328-b1b5-4865-96a2-e0acd561fe6f)
+
+Menübezeichnungen und Importverhalten können je nach Microsoft-365-Version abweichen.
